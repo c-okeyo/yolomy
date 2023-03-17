@@ -1,4 +1,6 @@
 import React from "react";
+import "../styles/header.css";
+import Navbar from "./Navbar";
 
 function Header() {
   return (
@@ -6,6 +8,7 @@ function Header() {
       <div className="section-1">
         <div className="container">
           <div className="row">
+            <Navbar /> {/*Added Navbar component here */}
             <div className="col-12">
               <div className="title d-flex">
                 <div className="justify-content-center align-self-center w-100">
@@ -20,10 +23,10 @@ function Header() {
                 </div>
               </div>
             </div>
-
             <div className="col-12">
               <div className="text-center chevron-down">
                 <a href="#products">
+                  {/* <i className="fa fa-chevron-down"></i> */}
                   <i className="fa fa-chevron-down" aria-hidden="true"></i>
                 </a>
               </div>
